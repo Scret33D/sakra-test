@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "Sakra RPC Test",
+  "version": "1.0.0",
+  "description": "Sakra Google Apps Script RPC test",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://script.google.com/macros/s/*/dev*"
+      ],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["bridge.js"],
+      "matches": [
+        "https://script.google.com/macros/s/*/dev*"
+      ]
+    }
+  ]
+}
