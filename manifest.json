@@ -16,7 +16,7 @@
     {
       "resources": ["bridge.js"],
       "matches": [
-        "https://script.google.com/macros/s/*/dev*"
+        "https://script.google.com/*"
       ]
     }
   ]
